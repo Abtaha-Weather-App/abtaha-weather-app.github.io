@@ -19,7 +19,7 @@ let formatTime = unixTime => {
 let setDataFuture = (data, unit) => {
 	document.getElementById(
 		"imageF"
-	).innerHTML = `<img src="http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png"></img>`;
+	).innerHTML = `<img src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png"></img>`;
 	document.getElementById("tempF").innerHTML =
 		data.list[0].main.temp + (unit === "metric" ? " °C" : " °F");
 	document.getElementById("windF").innerHTML =
