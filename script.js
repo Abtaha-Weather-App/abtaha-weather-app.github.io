@@ -68,7 +68,7 @@ function fetchData() {
 	document.getElementsByClassName("mainContainer")[0].style = "display: flex";
 
 	fetch(
-		`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${apiKey}`
+		`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${apiKey}`
 	)
 		.then(function(resp) {
 			return resp.json();
@@ -82,7 +82,7 @@ function fetchData() {
 		});
 
 	fetch(
-		`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${unit}&appid=${apiKey}`
+		`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${unit}&appid=${apiKey}`
 	)
 		.then(function(resp) {
 			return resp.json();	
