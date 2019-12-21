@@ -39,7 +39,7 @@ let setDataFuture = (data, unit) => {
 let setDataCurrent = (data, unit) => {
 	document.getElementById(
 		"image"
-	).innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"></img>`;
+	).innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"></img>`;
 	document.getElementById("temp").innerHTML =
 		data.main.temp + (unit === "metric" ? " °C" : " °F");
 	document.getElementById("wind").innerHTML =
